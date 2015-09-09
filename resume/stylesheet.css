@@ -19,9 +19,6 @@ body {
 
 .content {
 	text-align: left;
-	padding: 10px 100px 100px 100px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 a:hover, a:visited, a:link {
@@ -45,6 +42,10 @@ a:hover {
 
 .row li{
 	list-style-type: none;
+}
+
+.row-header {
+	font-weight: bolder;
 }
 
 .images {
