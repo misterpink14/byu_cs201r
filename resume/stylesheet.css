@@ -1,5 +1,10 @@
+body {
+	background-color: #E6E6E6;
+}
+
 #header {
 	background-color: #D0D0D0;
+	float:top;
 }
 
 #email {
@@ -13,7 +18,10 @@
 }
 
 .content {
-	text-align: center;
+	text-align: left;
+	padding: 10px 100px 100px 100px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a:hover, a:visited, a:link {
