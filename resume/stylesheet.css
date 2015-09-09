@@ -1,0 +1,52 @@
+#header {
+	background-color: #D0D0D0;
+}
+
+#email {
+	text-align: center;
+	vertical-align: top;
+}
+
+.nav {
+	color:blue;
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+}
+
+a:hover, a:visited, a:link {
+	color:#4690CD;
+}
+
+a:hover {
+	color: #8AC007;
+}
+
+.nav a:hover {
+	font-weight: bold;
+
+	/*border: 2px solid #8AC007;*/
+}
+
+#selected {
+	color: gray;
+	font-weight: bold;
+}
+
+.row li{
+	list-style-type: none;
+}
+
+.images {
+	padding: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.images img {
+	width:40%;
+	padding: 10px;
+}
