@@ -1,5 +1,8 @@
 body {
-    background-color: #000033;
+    background-color: white;
+    background-image: url("background.jpg");
+    background-size: 100% 800px;
+    background-repeat: no-repeat;
 }
 
 div {
@@ -26,7 +29,7 @@ div {
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
     0%   {background-color:white; left:0px; top:0px;}
-    25%  {background-color:white; left:0px; top:600px;}
+    25%  {background-color:white; left:0px; top:650px;}
 }
 
 #a {
@@ -137,5 +140,5 @@ div {
 /* Standard syntax */
 @keyframes example {
     0%   {background-color:white; left:0px; top:0px;}
-    100%  {background-color:white; left:0px; top:600px;}
+    100%  {background-color:white; left:0px; top:650px;}
 }
