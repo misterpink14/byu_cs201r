@@ -29,14 +29,7 @@
 var app = angular.module('myApp', []); 
 
 app.controller('familyCtrl', function($scope) {
-    $scope.familyList = [
-        // {
-        //     person:"1", 
-        //     father:"2",
-        //     mother:"3",
-        //     done:false
-        // },
-    ];
+    $scope.familyList = [];
 
     $scope.familyAdd = function() {
         if ($scope.person && $scope.father && $scope.mother) {
@@ -62,7 +55,9 @@ app.controller('familyCtrl', function($scope) {
         var oldList = $scope.familyList;
         $scope.familyList = [];
         angular.forEach(oldList, function(x) {
-            if (!x.done) $scope.familyList.push(x);
+            if (!x.done) {
+                $scope.familyList.push(x)
+            };
         });
     };
 });
