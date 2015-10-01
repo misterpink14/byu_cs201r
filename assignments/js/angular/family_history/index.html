@@ -39,17 +39,23 @@ app.controller('familyCtrl', function($scope) {
     ];
 
     $scope.familyAdd = function() {
-        $scope.familyList.push(
-            {
-                person:$scope.person,
-                father:$scope.father,
-                mother:$scope.mother,
-                done:false
-            }
-        );
-        $scope.person = "";
-        $scope.father = "";
-        $scope.mother = "";
+        if ($scope.person && $scope.father && $scope.mother) {
+            $scope.familyList.push(
+                {
+                    person:$scope.person,
+                    father:$scope.father,
+                    mother:$scope.mother,
+                    done:false
+                }
+            );
+            $scope.person = "";
+            $scope.father = "";
+            $scope.mother = "";
+        }
+        else
+        {
+            alert("Looks like you missed something!")
+        }
     };
 
     $scope.remove = function() {
