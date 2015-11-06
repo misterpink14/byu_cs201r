@@ -29,6 +29,19 @@ http.createServer(function (req, res) {
         res.writeHead(200);
         res.end("");
       });
+
+      var basicAuth = require('basic-auth-connect');
+      var auth = basicAuth(function(user, pass) {
+        return((user ==='cs201r')&&(pass === 'test'));
+      });
+      app.post('/comment', auth, function (req, res) {
+      console.log("In POST comment route");
+      console.log(req.user);
+      console.log("Remote User");
+      console.log(req.remoteUser);
+      res.status(200);
+      res.end();
+    });
     
       console.log("POST comment route");
     } else if(req.method === "GET") {
